@@ -1,7 +1,10 @@
-export const ImageGalleryItem = ({webformatURL, tags, webformatWidth}) => {
+import { GalleryItemsStyled,
+         GalleryItemsImg } from "./ImageGalleryItem.styled"
+
+export const ImageGalleryItem = ({image}) => {
     return ( 
-    <li>
-        <img src={webformatURL} alt={tags}  width={webformatWidth}/>
-    </li>)
+    <GalleryItemsStyled>
+        <GalleryItemsImg src={image.webformatURL} alt={image.tags}  width={image.webformatWidth}/>
+    </GalleryItemsStyled>)
    
 }
