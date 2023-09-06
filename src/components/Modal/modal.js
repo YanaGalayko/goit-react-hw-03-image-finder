@@ -14,11 +14,11 @@ const customStyles = {
   },
 };
 
-export const ModalWindow = ({ largeImageURL, tag , onClick, foo}) => {
+export const ModalWindow = ({ largeImageURL, tag , onClick, modalIsOpen}) => {
       return (
         <div className="overlay">
           <Modal
-            isOpen={foo}
+            isOpen={modalIsOpen}
             onRequestClose={onClick}
             style={customStyles}
             // contentLabel="Minimal Modal Example"

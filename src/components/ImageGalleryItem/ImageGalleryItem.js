@@ -20,7 +20,7 @@ export class ImageGalleryItem extends Component {
             onClick={this.showModal}
           />
           {this.state.modalIsOpen && (
-                  <ModalWindow largeImageURL={largeImageURL} tag={tags} onClick={this.showModal} foo={this.state.modalIsOpen} />
+                  <ModalWindow largeImageURL={largeImageURL} tag={tags} onClick={this.showModal} modalIsOpen={this.state.modalIsOpen} />
           )}
         </GalleryItemsStyled>
       );
