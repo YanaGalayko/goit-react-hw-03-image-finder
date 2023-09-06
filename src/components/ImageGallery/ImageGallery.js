@@ -5,8 +5,8 @@ export const ImageGallery = ({images}) => {
     return(
         <GalleryList>
         {images.map(image => {
-            return (<ImageGalleryItem key={image.id} image={image} />
-         )
+            return <ImageGalleryItem key={image.id} image={image} />
+         
         })}
     </GalleryList>
     )

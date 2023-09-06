@@ -1,10 +1,13 @@
-import { GalleryItemsStyled,
-         GalleryItemsImg } from "./ImageGalleryItem.styled"
+import { ModalWindow } from "components/Modal/modal"
+import { GalleryItemsStyled } from "./ImageGalleryItem.styled"
 
 export const ImageGalleryItem = ({image}) => {
     return ( 
     <GalleryItemsStyled>
-        <GalleryItemsImg src={image.webformatURL} alt={image.tags}  width={image.webformatWidth}/>
+        <ModalWindow
+        webformatURL={image.webformatURL}
+        largeImageURL={image.largeImageURL}
+        tag={image.tag}/>
     </GalleryItemsStyled>)
    
 }
